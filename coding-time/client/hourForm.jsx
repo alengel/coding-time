@@ -6,8 +6,8 @@ HourForm = React.createClass({
     e.preventDefault();
     
     // Access the input fields using React.findDOMNode and store them in a variable
-    var numHours = React.findDOMNode(this.refs.numHours),
-        hourDate = React.findDOMNode(this.refs.hourDate);
+    var numHours = ReactDOM.findDOMNode(this.refs.numHours),
+        hourDate = ReactDOM.findDOMNode(this.refs.hourDate);
     
     // Use Meteor's call function 
     // Pass the insertHour function as first parameter
